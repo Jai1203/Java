@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Arrays;
+abstract class Animal{
+    Animal(){
+        System.out.println("Animal is created");
+    }
+    abstract void walk();
+    public void eats(){
+        System.out.println("Animal eats");
+    }
+}
+class Horse extends Animal{
+    Horse(){
+        System.out.println("Horse is created");
+    }
+    public void walk(){
+        System.out.println("Animal walks on 4 legs");
+    }
+}
+class Ostrich extends Animal{
+    Ostrich(){
+        System.out.println("Ostrich ic created");
+    }
+    public void walk(){
+        System.out.println("Animal walks on 2 legs");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Horse horse=new Horse();
+        horse.walk();
+        Ostrich ostrich=new Ostrich();
+        ostrich.walk();
+    }
+}
