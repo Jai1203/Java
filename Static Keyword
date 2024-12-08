@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Student{
+    String name;
+    static String school;
+    public void changeschool(){
+        school="APS";
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Student.school="DPS";
+        Student s1=new Student();
+        s1.name="Jai";
+        System.out.println(s1.name+" "+s1.school);
+        s1.changeschool();
+        System.out.println(s1.name+" "+s1.school);
+    }
+}
