@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Arrays;
+interface Animal{
+    public void walk();
+}
+interface Herbivore{
+    public void eats();
+}
+class Horse implements Animal,Herbivore{
+    public void walk(){
+        System.out.println("animal walks on 4 legs");
+    }
+    public void eats(){
+        System.out.println("animal eats grass");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Horse horse=new Horse();
+        horse.walk();
+        horse.eats();
+    }
+}
